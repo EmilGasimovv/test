@@ -22,7 +22,7 @@ submit.addEventListener('click', function(e) {
   };
 
   // Verileri API'ye gönderin
-  fetch("http://localhost:8080/kitab/post", {
+  fetch("http://192.168.0.105:8080/kitab/post", {
     method: "POST",
     body: JSON.stringify(dataToSend), // Göndermek istediğiniz veriyi JSON formatına dönüştürüp göndermelisiniz
     headers: {
